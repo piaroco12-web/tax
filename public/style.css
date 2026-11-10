@@ -1,0 +1,39 @@
+:root {
+  color-scheme: light;
+  font-family: system-ui, "Malgun Gothic", sans-serif;
+  color: #171941;
+  background: #f2f3ff;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 960px; margin: auto; padding: 28px 20px 36px; }
+header { padding: clamp(24px, 5vw, 46px); background: #171c80; color: white; border-radius: 24px; }
+header p { margin: 10px 0 0; line-height: 1.6; color: #e0e4ff; }
+header .tag { margin: 0 0 12px; color: #8af4ee; font-size: .88rem; font-weight: 700; }
+h1 { margin: 0; font-size: clamp(1.65rem, 5vw, 3rem); line-height: 1.2; word-break: keep-all; }
+h2 { margin: 0 0 18px; font-size: 1.2rem; }
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 16px; }
+.card { background: white; border: 1px solid #dbdff4; border-radius: 20px; padding: clamp(18px, 4vw, 28px); }
+label { display: block; font-weight: 650; margin: 12px 0 6px; }
+.field { display: flex; align-items: center; gap: 10px; }
+.field span { white-space: nowrap; color: #535775; }
+input, button { font: inherit; border-radius: 10px; }
+input { width: 100%; min-width: 0; border: 1px solid #a2a7c7; padding: 10px; background: #fcfcff; color: inherit; }
+button { padding: 9px 13px; cursor: pointer; border: 1px solid #b4bae7; background: #f1f2ff; color: #24298e; font-weight: 650; }
+button:hover { background: #e1e4ff; }
+.primary { width: 100%; margin-top: 18px; background: #3038bb; border-color: #3038bb; color: white; }
+.primary:hover { background: #202787; }
+:focus-visible { outline: 3px solid #087b78; outline-offset: 3px; }
+.example-label, .estimate-label { color: #535775; font-size: .9rem; margin: 16px 0 8px; }
+.examples { display: flex; flex-wrap: wrap; gap: 7px; }
+.estimate { color: #252ea2; font-size: clamp(1.9rem, 6vw, 3rem); font-weight: 750; margin: 0 0 18px; }
+dl { margin: 0; }
+dl div { display: flex; justify-content: space-between; gap: 10px; padding: 11px 0; border-top: 1px solid #e5e7f2; }
+dd { margin: 0; font-weight: 650; white-space: nowrap; }
+.isa-inputs, .guide { margin-top: 16px; }
+details { border: 1px solid #dbdff4; border-radius: 10px; padding: 12px; }
+details + details { margin-top: 10px; }
+summary { font-weight: 700; cursor: pointer; color: #252ea2; }
+details p, .sources { line-height: 1.65; color: #4b506d; font-size: .92rem; margin: 8px 0 0; }
+.sources a { color: #252ea2; }
+@media (max-width: 650px) { .grid { grid-template-columns: 1fr; } }
